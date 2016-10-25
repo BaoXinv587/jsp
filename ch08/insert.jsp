@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>插入数据</title>
+<title>插入数据页面</title>
 </head>
 <body>
     <%
@@ -16,7 +16,7 @@
     <%
        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver").newInstance();
        String url="jdbc:sqlserver://localhost:1433;DatabaseName=xs";
-       Connection con=DriverManager.getConnection(url,"qian","");
+       Connection con=DriverManager.getConnection(url,"bao","");
        Statement z=con.createStatement();
        ResultSet m=z.executeQuery("select * from studnt05");
        while(m.next()){
